@@ -11,10 +11,17 @@
     --preto: #000;
 }
 
+@media screen and (max-width: 3000px){
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+body.dark{
+    background-color: black;
+    transition: .3s;
 }
 
 header{
@@ -55,6 +62,10 @@ header{
     position: relative;
 }
 
+body.dark .nav-link{
+   color: var(--branco);
+}
+
 .nav-button button{
     border: none;
     padding: 15px;
@@ -62,6 +73,48 @@ header{
     color: var(--branco);
     background: var(--orange1);
 }
+
+.trilho{
+    width: 50px;
+    height: 25px;
+    background-color: var(--cinza);
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    background-color: var(--branco);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+    background-color: #919191;
+}
+
+.trilho.dark .indicador{
+     left: 24px;
+     background-color: black;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+body.dark .mobile-menu-icon{
+    color: var(--branco);
+}
+
+.mobile-menu{
+    display: none;
+}
+
 
 .section-home{
     height: 45rem;
@@ -93,14 +146,27 @@ header{
     line-height: 2;
 }
 
+
 .div-dados h2{
    font-size: 2rem;
    line-height: 1.5;
 }
 
+body.dark .div-dados h2{
+    color: var(--branco);
+}
+
 .div.dados h3{
     font-size: 1.5rem;
     line-height: 0.5;
+}
+
+body.dark .div-dados h3{
+    color: var(--branco);
+}
+
+body.dark .div-dados p{
+    color: var(--branco);
 }
 
 .div-logos{
@@ -120,7 +186,11 @@ header{
 
 }
 
-
+body.dark .div-logos a{
+     border: 1px solid var(--branco);
+     background: black;
+     color: var(--branco);
+}
 
 #contato-button{
     border: none;
@@ -153,6 +223,10 @@ header{
     border: 4px solid var(--cinza);
 }
 
+body.dark .div-right img{
+    border: 4px solid black;
+}
+
 .section-sobre{
     padding: 6rem 2rem;
     height: 40rem;
@@ -165,12 +239,20 @@ header{
     line-height: 3.5;
 }
 
+body.dark .sobre-titulo{
+    color: var(--branco);
+}
+
 .secao-sobre{
     padding: 2rem;
     max-width: 600px;
     margin: 0 auto;
     border-radius: 16px;
     border: 1px solid var(--orange);
+}
+
+body.dark .secao-sobre p{
+    color: var(--branco);
 }
 
 
@@ -182,6 +264,10 @@ header{
     font-size: 3rem;
     text-align: center;
     margin-bottom: 100px;
+}
+
+body.dark .titulo-experiencias{
+    color: var(--branco);
 }
 
 .container-experiencias{
@@ -226,6 +312,10 @@ header{
     text-align: right;
     z-index: 99;
 }
+
+body.dark .container-experiencias ul li{
+    background: black;
+}
 .container-experiencias ul li:nth-child(even){
     float: right;
     clear: left;
@@ -253,6 +343,14 @@ ul li p{
     line-height: 1.5;
 }
 
+body.dark ul li p{
+    color: var(--branco);
+}
+
+body.dark .title-container{
+    color: var(--branco);
+}
+
 ul li a{
     font-size: 1rem;
     color: var(--orange1);
@@ -261,17 +359,12 @@ ul li a{
 
 ul li .date{
     position: absolute;
-
     left: 20px;
-
     width: 200px;
     height: 35px;
     padding: 15px;
-
     border-radius: 30px;
-
     color: white;
-
     background: linear-gradient(
         to right,
         var(--orange),
@@ -281,7 +374,6 @@ ul li .date{
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 14px;
     font-weight: bold;
 }
@@ -341,6 +433,10 @@ ul li .date{
     margin-bottom: 2rem;
 }
 
+body.dark .projetos-titulo{
+    color: var(--branco);
+}
+
 .projetos-card:hover{
      box-shadow: 0 10px 20px var(--cinza);
      transform: translateY(-10px) scale(1.03);
@@ -362,6 +458,10 @@ ul li .date{
     box-shadow: 0 10px 20px var(--cinza);
 }
 
+body.dark .projetos-card{
+    box-shadow: 0 10px 20px black;
+}
+
 .projetos-imagem{
     width: 100%;
     height: 200px;
@@ -372,8 +472,16 @@ ul li .date{
     padding: 1.5rem;
 }
 
-.info-prpjetos{
+.info-projeto{
     line-height: 1.5;
+}
+
+body.dark .info-projeto{
+    color: var(--branco);
+}
+
+body.dark .paragrafo-projetos{
+    color: var(--branco);
 }
 
 .section-contato{
@@ -387,6 +495,10 @@ ul li .date{
     margin-bottom: 2.5rem;
 }
 
+body.dark .contato-titulo{
+    color: var(--branco);
+}
+
 .formulario-contato{
     max-width: 600px;
     margin: 0 auto;
@@ -396,11 +508,15 @@ ul li .date{
     border-radius: 20px;
 }
 
+body.dark .formulario-contato{
+    box-shadow: 0 10px 20px black;
+}
 
 
 .grupo-form{
    margin-bottom: 1.5rem;
 }
+
 
 .campo-form{
    width: 80%;
@@ -421,3 +537,119 @@ ul li .date{
     cursor: pointer;
     
 }
+}
+@media screen and (max-width: 1200px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transform: translateX(150px);
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding: 1rem 1.2rem;
+    }
+
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .section-home{
+        height: 70rem;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-left{
+        align-items: center;
+        margin-left: 20%;
+    }
+
+    .section-experiencias{
+        height: 100%;
+    }
+
+    .projetos-caixa{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1500px){
+    .nav-bar{
+        margin: 0 200px;
+    }
+     .logo-bar{
+        transform: translateX(-108px);
+        
+     }
+
+    .nav-button button{
+      transform: translateX(58px);
+    }
+
+    .trilho{
+        transform: translateX(80px);
+        background-color: var(--cinza);
+    }
+
+    .section-home{
+        height: 75rem;
+    }
+
+     .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-left{
+        align-items: center;
+        margin-left: 20%;
+    }
+
+    
+
+
+}
+

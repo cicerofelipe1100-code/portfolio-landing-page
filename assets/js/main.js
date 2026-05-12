@@ -12,3 +12,26 @@ function enviarWhats(event){
 
      window.open(url, '_blank')
 }
+
+
+let trilho = document.getElementById('trilho')
+let body = document.querySelector('body')
+
+trilho.addEventListener('click',() =>{
+    trilho.classList.toggle('dark')
+    body.classList.toggle('dark')
+})
+
+
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "assets/images/icons8-letra-x-24.png";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "assets/images/icons8-cardápio-24.png";
+
+    }
+}
