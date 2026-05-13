@@ -256,6 +256,72 @@ body.dark .secao-sobre p{
 }
 
 
+.section-servicos {
+    padding: 60px 40px;
+}
+
+.section-servicos h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+body.dark .section-servicos h1{
+    color: var(--branco);
+}
+
+.div-serviços {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-servico {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    min-height: 100px;
+    background: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px var(--cinza);
+    transform: scale(0.9);
+}
+
+body.dark .card-servico{
+    background-color: #000;
+    box-shadow: 0 10px 20px #000;
+    border:  1px solid var(--branco);
+}
+
+.card-servico img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.card-servico h2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+}
+
+body.dark .card-servico h2{
+    color: var(--branco);
+    
+}
+
+.card-servico:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px var(--cinza);
+}
+
+
+
+
 .section-experiencias{
      height: 70rem;
 }
