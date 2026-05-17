@@ -959,6 +959,7 @@ body.dark .formulario-contato{
     }
 
     .container-experiencias ul li .circle{
+        display: none;
         right: 20px;
         left: auto;
     }
@@ -972,6 +973,7 @@ body.dark .formulario-contato{
     }
 
     .container-experiencias ul li .circle{
+        display: none;
         right: 20px;
         left: auto;
     }
@@ -1069,6 +1071,7 @@ body.dark .formulario-contato{
     }
 
     .container-experiencias ul li .circle{
+        display: none;
         right: 10px;
         left: auto;
     }
@@ -1122,6 +1125,7 @@ body.dark .formulario-contato{
     }
 
     .container-experiencias ul li .circle{
+        display: none;
         right: 10px;
     }
 }
