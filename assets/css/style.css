@@ -49,13 +49,21 @@ header{
     height: 1.5rem;
     margin: 0 auto;
     max-width: 1280px;
+    width: 100%;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .logo-bar{
     display: flex;
     align-items: center;
     color: var(--orange);
+    gap: 0.75rem;
+}
+
+.logo-bar h1{
+    font-size: 1.35rem;
+    letter-spacing: 0.02em;
 }
 
 .nav-list ul{
@@ -63,7 +71,7 @@ header{
     justify-content: center;
     list-style: none;
     text-decoration: none;
-    gap: 100px;
+    gap: 60px;
 }
 
 .nav-item{
@@ -81,9 +89,14 @@ body.dark .nav-link{
    color: var(--branco);
 }
 
-.nav-button  a{
-     border: none;
-    padding: 15px;
+.nav-button{
+    margin-left: 1.5rem;
+}
+
+.nav-button a{
+    display: inline-block;
+    border: none;
+    padding: 0.85rem 1.5rem;
     border-radius: 10px;
     color: var(--branco);
     background: var(--orange1);
@@ -637,9 +650,9 @@ body.dark .formulario-contato{
 /* Tablet large / desktop reduzido */
 @media screen and (max-width: 1500px){
     .nav-bar{
-        margin: 0 120px;
+        margin: 0 auto;
         padding: 1.5rem 2rem;
-        gap: 2rem;
+        gap: 1.5rem;
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
@@ -658,7 +671,7 @@ body.dark .formulario-contato{
     .nav-list ul{
         justify-content: center;
         flex-wrap: nowrap;
-        gap: 60px;
+        gap: 50px;
     }
 
     .nav-button{
