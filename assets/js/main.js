@@ -14,13 +14,19 @@ function enviarWhats(event){
      window.open(url, '_blank')
 }
 
-/* JS - Modp Dark */
+/* JS - Modo Dark */
 
 let trilho = document.getElementById('trilho')
+let trilho_mobile = document.getElementById('trilho-mobile')
 let body = document.querySelector('body')
 
 trilho.addEventListener('click',() =>{
     trilho.classList.toggle('dark')
+    body.classList.toggle('dark')
+})
+
+trilho_mobile.addEventListener('click',() =>{
+    trilho_mobile.classList.toggle('dark')
     body.classList.toggle('dark')
 })
 
