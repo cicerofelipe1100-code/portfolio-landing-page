@@ -984,3 +984,9 @@ body.dark .formulario-contato{
     }
 }
 
+@media screen and (max-width: 400px){
+      .section-sobre{
+         height: 90rem;
+      }
+}
+
