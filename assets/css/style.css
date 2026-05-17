@@ -747,6 +747,7 @@ body.dark .formulario-contato{
     .container-experiencias{
         width: 100%;
         padding: 0 1rem;
+        
     }
 
     .container-experiencias::after{
@@ -761,7 +762,8 @@ body.dark .formulario-contato{
         width: 100%;
         float: none;
         clear: both;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
+
         box-sizing: border-box;
     }
 
@@ -1157,6 +1159,10 @@ body.dark .formulario-contato{
       .formulario-contato{
          width: 100%;
          max-width: 100%;
+      }
+
+      .grupo-form{
+        width: 80%;
       }
 }
 
