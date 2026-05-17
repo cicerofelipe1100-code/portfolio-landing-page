@@ -158,7 +158,7 @@ body.dark .mobile-menu-icon img{
 .content{
     display: flex;
     justify-content: space-between;
-    align-items: left;
+    align-items: flex-start;
     gap: 60px;
     max-width: 1200px;
     margin: 0 auto;
@@ -171,8 +171,7 @@ body.dark .mobile-menu-icon img{
     flex-direction: column;
     gap: 20px;
     margin-top: 15%;
-    transform: translateX(-90px);
-    
+    transform: none;
 }
 
 .div-dados h1{
@@ -732,6 +731,10 @@ body.dark .formulario-contato{
     }
 
     .container-experiencias::after{
+        display: none;
+    }
+
+    .container-experiencias ul li .circle{
         display: none;
     }
 
