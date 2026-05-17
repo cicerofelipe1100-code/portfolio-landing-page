@@ -714,6 +714,34 @@ body.dark .formulario-contato{
         padding: 0;
     }
 
+    .container-experiencias{
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .container-experiencias::after{
+        display: none;
+    }
+
+    .container-experiencias ul li{
+        width: 100%;
+        float: none;
+        clear: both;
+        margin-bottom: 2rem;
+        box-sizing: border-box;
+    }
+
+    .container-experiencias ul li:nth-child(odd),
+    .container-experiencias ul li:nth-child(even){
+        float: none;
+        clear: both;
+    }
+
+    .container-experiencias ul li .circle{
+        right: 20px;
+        left: auto;
+    }
+
     .mobile-menu{
         display: none;
         position: absolute;
@@ -852,6 +880,7 @@ body.dark .formulario-contato{
 
     .section-sobre{
         padding: 4rem 1.5rem;
+        height: auto;
     }
 
     .secao-sobre{
@@ -873,8 +902,16 @@ body.dark .formulario-contato{
         justify-content: center;
     }
 
-    .section-sobre{
-        height: 50rem
+    .formulario-contato{
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .campo-form,
+    .botao-form{
+        width: 100%;
+        transform: none;
     }
 
     .section-experiencias{
@@ -884,6 +921,7 @@ body.dark .formulario-contato{
     .container-experiencias{
         width: 100%;
         padding: 0 1rem;
+        overflow: visible;
     }
 
     .container-experiencias::after{
@@ -893,8 +931,21 @@ body.dark .formulario-contato{
     .container-experiencias ul li{
         width: 100%;
         float: none;
+        clear: both;
         text-align: left;
         margin-bottom: 2rem;
+        box-sizing: border-box;
+    }
+
+    .container-experiencias ul li:nth-child(odd),
+    .container-experiencias ul li:nth-child(even){
+        float: none;
+        clear: both;
+    }
+
+    .container-experiencias ul li .circle{
+        right: 20px;
+        left: auto;
     }
 
     .container-experiencias ul li:nth-child(3){
@@ -956,6 +1007,32 @@ body.dark .formulario-contato{
     .secao-sobre{
         padding: 1.5rem;
     }
+
+    .section-sobre{
+        height: auto;
+        padding: 4rem 1.5rem;
+    }
+
+    .secao-sobre{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .formulario-contato{
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .campo-form{
+        width: 100%;
+        transform: none;
+    }
+
+    .botao-form{
+        width: 100%;
+        transform: none;
+    }
 }
 
 /* Ajustes extremos */
@@ -966,7 +1043,8 @@ body.dark .formulario-contato{
     }
 
     .section-sobre{
-        height: 65rem;
+        height: auto;
+        padding: 3rem 1rem;
     }
 
     .div-dados h1{
@@ -986,7 +1064,12 @@ body.dark .formulario-contato{
 
 @media screen and (max-width: 400px){
       .section-sobre{
-         height: 90rem;
+         height: auto;
+      }
+
+      .formulario-contato{
+         width: 100%;
+         max-width: 100%;
       }
 }
 
