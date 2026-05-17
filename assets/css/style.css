@@ -693,6 +693,25 @@ body.dark .formulario-contato{
     .section-experiencias{
         height: 90rem;
     }
+
+    .container-experiencias{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container-experiencias ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    .container-experiencias ul li{
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+        float: none;
+        clear: none;
+    }
 }
 
 /* Tablets e telas menores */
