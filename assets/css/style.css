@@ -1152,7 +1152,10 @@ body.dark .formulario-contato{
 }
 
 @media screen and (max-width: 400px){
-      .section-sobre{
+     #button-mobile{
+         width: 60%;
+     }
+          .section-sobre{
          height: auto;
       }
 
@@ -1163,6 +1166,10 @@ body.dark .formulario-contato{
 
       .grupo-form{
         width: 80%;
+      }
+
+      .botao-form{
+           width: 90%;
       }
 }
 
