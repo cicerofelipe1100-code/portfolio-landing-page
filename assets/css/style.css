@@ -294,6 +294,15 @@ body.dark .secao-sobre p{
     color: var(--branco);
 }
 
+.sobre-paragrafo{
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.sobre-paragrafo:last-child{
+    margin-bottom: 0;
+}
+
 /* CSS - Section - Serviços */
 
 .section-servicos {
@@ -702,6 +711,7 @@ body.dark .formulario-contato{
     .container-experiencias ul li{
         width: calc(50% - 40px);
         margin-bottom: 40px;
+        text-align: left;
     }
 }
 
